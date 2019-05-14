@@ -4,16 +4,16 @@ class Module {
     }
 
     EVENT() {
-        // coo.on('.addBtn', this.domain, 'click', t => this.showStory());
+        cp.on('.back', DOMAIN, 'click', t => this.back());
         // coo.on('.close', this.domain, 'click', t => this.hideStory());
     }
 
     INIT() {
-        this.initList();
+        //this.initList();
     }
 
-    initList() {
-
+    back() {
+        cp.link('/content')
     }
 
     showStory() {

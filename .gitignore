@@ -1,8 +1,12 @@
 ### IntelliJ IDEA ###
-.idea
+.idea/
 *.iws
 *.iml
 *.ipr
 
 ### logs ###
 /logs/
+
+### test ###
+test.*
+/test

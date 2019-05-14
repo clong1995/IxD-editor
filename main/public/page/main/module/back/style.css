@@ -5,10 +5,63 @@
     width: 60px;
     border-right: var(--border);
     cursor: pointer;
+    float: left;
+}
+
+.back:active {
+    font-weight: bold;
 }
 
 .list {
-    background: #408BFA;
-    width: calc(100% - 60px - 10px);
+    width: calc(100% - 90px);
     height: 20px;
+    float: left;
+    line-height: 20px;
+    margin: 5px 0 0 10px;
+    position: relative;
+    outline: none;
+}
+
+.list > .extra {
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+}
+
+.list > .ul {
+    display: none;
+    width: 100%;
+    background: var(--background);
+    position: absolute;
+    border: var(--border);
+    border-bottom: unset;
+    top: 20px;
+    left: -3px;
+    z-index: 2;
+    font-size: 12px;
+}
+
+.list:focus > .extra {
+    font-weight: bold;
+}
+
+.list:focus > .ul {
+    display: unset;
+}
+
+.list > .ul > .li {
+    padding-left: 4px;
+    cursor: pointer;
+    height: 23px;
+    line-height: 23px;
+    border-bottom: var(--border);
+}
+
+.list > .ul > .li:active {
+    font-weight: bold;
+}
+
+
+.list > .ul > .li > .icon {
+    margin-right: 2px;
 }

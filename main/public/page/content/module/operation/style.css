@@ -34,7 +34,7 @@
 .sort {
     width: 100px;
     float: right;
-    background: #fafafa;
+    background: var(--background2);
     overflow: hidden;
     margin: 9px 10px 9px 0;
     height: 22px;
@@ -44,7 +44,7 @@
 
 .sort > .icon,
 .search > .icon {
-    background: #fafafa;
+    background: var(--background2);
     float: left;
     display: inline-block;
     width: 22px;

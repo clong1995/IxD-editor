@@ -3,7 +3,7 @@
     padding: 0 10px;
     height: 25px;
     line-height: 25px;
-    background: #ececec;
+    background: var(--background);
     border-bottom: var(--border);
 }
 
@@ -21,9 +21,7 @@
     width: calc(100% - 10px);
     margin: 5px auto;
     height: 100px;
-    background: green;
     position: relative;
-    border-bottom: var(--border);
 }
 
 .list > .layer > .num {
@@ -40,8 +38,8 @@
 .list > .layer > .thumbnail {
     width: 100%;
     height: calc(100% - 20px);
-    background: #efefef;
-    border: 3px solid #dfdfdf;
+    background: var(--background2);
+    border: 3px solid var(--background);
     cursor: move;
 }
 
@@ -49,6 +47,6 @@
     width: 100%;
     height: 20px;
     line-height: 20px;
-    background: #dfdfdf;
+    background: var(--background);
     text-align: center;
 }

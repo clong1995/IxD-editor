@@ -33,14 +33,18 @@
     padding: 0 15px;
 }
 
-.list > .item > .icon {
+.list > .item > .title {
+    cursor: pointer;
+}
+
+.list > .item > .title > .icon {
     font-size: 17px;
     margin-right: 5px;
 }
 
 .list > .item.active {
     width: calc(100% + 1px);
-    background: #ececec;
+    background: var(--background);
     font-weight: bold;
     border: 1px solid #cccccc;
     border-right: none;

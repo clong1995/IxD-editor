@@ -2,6 +2,7 @@
     float: left;
     padding: 5px;
     padding-top: unset;
+    padding-bottom: 10px;
 }
 
 .item > .inner {

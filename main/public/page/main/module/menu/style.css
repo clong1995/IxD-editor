@@ -61,7 +61,7 @@
     width: 110px;
     height: 100%;
     float: left;
-    background: #ececec;
+    background: var(--background);
     border-right: var(--border);
     overflow-y: auto;
 }
@@ -110,7 +110,7 @@
     float: left;
     margin: 0 0 10px 10px;
     border: var(--border);
-    background: #ececec;
+    background: var(--background);
     cursor: pointer;
 }
 
@@ -125,7 +125,7 @@
     line-height: 50px;
     text-align: center;
     margin: 3px auto 0 auto;
-    background: #fafafa;
+    background: var(--background2);
 }
 
 .chip > .item > .wrap > .content > .ul > .li > .thumbnail > .icon {

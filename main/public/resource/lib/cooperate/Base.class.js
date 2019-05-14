@@ -2070,6 +2070,21 @@ class Base {
                 cb(false)
             }
         }, timer);
+    };
+
+    addActive(dom) {
+        this.addClass(dom, 'active');
+    }
+
+    removeActive(dom) {
+        this.removeClass(dom, 'active');
+    }
+
+    toggleActive(dom) {
+        //去掉已激活元素
+        this.removeActive(dom.parentNode.querySelector(".active"));
+        //激活自己
+        this.addActive(dom);
     }
 
 

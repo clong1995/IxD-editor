@@ -4,11 +4,15 @@ class Module {
     }
 
     EVENT() {
-        // coo.on('.addBtn', this.domain, 'click', t => this.showStory());
+        cp.on('.item', DOMAIN, 'click', t => this.selectedItem(t));
         // coo.on('.close', this.domain, 'click', t => this.hideStory());
     }
 
     INIT() {
 
+    }
+
+    selectedItem(target) {
+        cp.toggleActive(target);
     }
 }

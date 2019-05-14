@@ -4,12 +4,16 @@
     height: 15px;
     width: 15px;
     float: left;
-    background: #ececec;
+    background: var(--background);
+    z-index: 2;
+    position: relative;
 }
 
 .axis-X, .axis-Y {
-    background-color: #ececec;
+    background-color: var(--background);
     float: left;
+    z-index: 2;
+    position: relative;
 }
 
 .axis-X {
@@ -58,7 +62,7 @@
     width: 100%;
     height: 20px;
     border-top: var(--border);
-    background: #ececec;
+    background: var(--background);
     z-index: 2;
 }
 
@@ -109,11 +113,13 @@
 
 .tool-bar > .range-box > .button {
     float: left;
-    height: 17px;
-    line-height: 17px;
+    height: 15px;
+    margin-top: 1px;
+    line-height: 15px;
     width: 45px;
     text-align: center;
     background: #408BFA;
+    border: 1px solid #408BFA;
     color: #ffffff;
 }
 

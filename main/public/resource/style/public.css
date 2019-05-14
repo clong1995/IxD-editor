@@ -1,17 +1,19 @@
 :root {
     --border: 1px solid #cecece;
+    --background: #ececec;
+    --background2: #fafafa;
 }
 
 body {
     user-select: none;
     font-size: 13px;
-    background: #ececec;
+    background: var(--background);
 }
 
 @font-face {
     font-family: 'iconfont';
     /*src: url('../icon/iconfont.ttf');*/
-    src: url('//at.alicdn.com/t/font_722315_m42r9imubzd.woff2');
+    src: url('//at.alicdn.com/t/font_722315_btqoatur3s.woff2');
 }
 
 
@@ -28,7 +30,7 @@ body {
     line-height: 22px;
     font-size: 11px;
     border: var(--border);
-    background: #fafafa;
+    background: var(--background2);
     border-radius: 2px;
 }
 
@@ -41,7 +43,7 @@ body {
 .button {
     font-size: 11px;
     border: var(--border);
-    background: #fafafa;
+    background: var(--background2);
     height: 22px;
     padding: 0 5px;
     line-height: 20px;
