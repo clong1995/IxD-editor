@@ -1,0 +1,14 @@
+.back {
+    height: 20px;
+    line-height: 20px;
+    margin: 5px 0 0 10px;
+    width: 60px;
+    border-right: var(--border);
+    cursor: pointer;
+}
+
+.list {
+    background: #408BFA;
+    width: calc(100% - 60px - 10px);
+    height: 20px;
+}

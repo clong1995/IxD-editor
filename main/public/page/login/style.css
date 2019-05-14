@@ -1,0 +1,36 @@
+.title {
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    margin: 20px 0;
+    text-align: center;
+}
+
+.title > .big {
+    font-size: 26px;
+}
+
+.qrcode {
+    width: 180px;
+    height: 180px;
+    background: #408BFA;
+    margin: 0 auto;
+}
+
+.text {
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    margin: 20px 0  10px 0;
+    font-size: 18px;
+    text-align: center;
+}
+.guest {
+    width: 100%;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    color: #3e3e3e;
+    cursor: pointer;
+    text-decoration:underline;
+}

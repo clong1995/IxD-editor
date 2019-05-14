@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+        /*fetch('http://192.168.20.113:1234', {
+            method: "POST",
+            headers: {
+                'Content-Type': 'application/x-www-form-urlencoded'
+            },
+            body: JSON.stringify({
+                a: 5,
+                b: 6
+            })
+        }).then(res => {
+            return res;
+        }).then(res => {
+            return res.json()
+        }).then(res => {
+            console.log(res);
+        }).catch(err => {
+            console.log(err);
+        });*/
+
+        let a = {
+            a: 5,
+            b: {
+                c: 6
+            }
+        };
+
+
+        let xhr = new XMLHttpRequest();
+        xhr.open("POST", 'http://192.168.20.113:1234');
+        xhr.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+        xhr.onload = () => {
+            console.log(xhr.responseText);
+        };
+        xhr.send("a=5&b=6&c={d:7}");
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>

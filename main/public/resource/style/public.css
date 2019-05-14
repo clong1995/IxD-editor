@@ -1,0 +1,56 @@
+:root {
+    --border: 1px solid #cecece;
+}
+
+body {
+    user-select: none;
+    font-size: 13px;
+    background: #ececec;
+}
+
+@font-face {
+    font-family: 'iconfont';
+    /*src: url('../icon/iconfont.ttf');*/
+    src: url('//at.alicdn.com/t/font_722315_m42r9imubzd.woff2');
+}
+
+
+.iconfont {
+    font-family: "iconfont" !important;
+    font-style: normal;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.input {
+    width: 120px;
+    height: 22px;
+    line-height: 22px;
+    font-size: 11px;
+    border: var(--border);
+    background: #fafafa;
+    border-radius: 2px;
+}
+
+.input:focus {
+    background: #ffffff;
+    font-weight: bold;
+    border: 1px solid #bfbfbf;
+}
+
+.button {
+    font-size: 11px;
+    border: var(--border);
+    background: #fafafa;
+    height: 22px;
+    padding: 0 5px;
+    line-height: 20px;
+    cursor: pointer;
+    border-radius: 2px;
+}
+
+.button:active {
+    background: #ffffff;
+    font-weight: bold;
+    border: 1px solid #bfbfbf;
+}

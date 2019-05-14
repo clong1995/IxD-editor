@@ -1,0 +1,54 @@
+.title {
+    width: 100%;
+    padding: 0 10px;
+    height: 25px;
+    line-height: 25px;
+    background: #ececec;
+    border-bottom: var(--border);
+}
+
+.title > .select {
+    float: right;
+}
+
+.list {
+    width: 100%;
+    height: calc(100% - 25px);
+    overflow-y: auto;
+}
+
+.list > .layer {
+    width: calc(100% - 10px);
+    margin: 5px auto;
+    height: 100px;
+    background: green;
+    position: relative;
+    border-bottom: var(--border);
+}
+
+.list > .layer > .num {
+    width: 30px;
+    height: 25px;
+    line-height: 25px;
+    position: absolute;
+    top: 3px;
+    left: 3px;
+    background: white;
+    text-align: center;
+}
+
+.list > .layer > .thumbnail {
+    width: 100%;
+    height: calc(100% - 20px);
+    background: #efefef;
+    border: 3px solid #dfdfdf;
+    cursor: move;
+}
+
+.list > .layer > .name {
+    width: 100%;
+    height: 20px;
+    line-height: 20px;
+    background: #dfdfdf;
+    text-align: center;
+}

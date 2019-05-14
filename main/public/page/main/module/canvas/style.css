@@ -1,0 +1,251 @@
+.axis-O {
+    line-height: 13px;
+    text-align: center;
+    height: 15px;
+    width: 15px;
+    float: left;
+    background: #ececec;
+}
+
+.axis-X, .axis-Y {
+    background-color: #ececec;
+    float: left;
+}
+
+.axis-X {
+    width: calc(100% - 15px);
+    height: 15px;
+    border-bottom: var(--border);
+    background-image: url("img/line-X.png");
+    background-repeat: repeat-x;
+}
+
+.axis-Y {
+    width: 15px;
+    height: calc(100% - 15px - 20px);
+    border-right: var(--border);
+    background-image: url("img/line-Y.png");
+    background-repeat: repeat-y;
+}
+
+.line-X, .line-Y {
+    position: absolute;
+    z-index: 2;
+}
+
+.line-X {
+    border-top: 1px solid #408BFA;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    cursor: ns-resize;
+    height: 5px;
+}
+
+.line-Y {
+    border-right: 1px solid #408BFA;
+    top: 0;
+    left: 50%;
+    height: calc(100% - 20px);
+    cursor: ew-resize;
+    width: 5px;
+}
+
+.tool-bar {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 20px;
+    border-top: var(--border);
+    background: #ececec;
+    z-index: 2;
+}
+
+.tool-bar > .tool-box {
+    float: right;
+    width: 275px;
+    height: 19px;
+    padding: 1px 0;
+    margin-left: 10px;
+}
+
+.tool-bar > .tool-box:after {
+    content: "|";
+    float: right;
+    font-size: 10px;
+}
+
+.tool-bar > .tool-box > .title {
+    float: left;
+    line-height: 18px;
+    margin-right: 5px;
+    font-size: 11px;
+}
+
+.tool-bar > .range-box {
+    width: 250px;
+}
+
+.tool-bar > .range-box:after {
+    content: "";
+}
+
+.tool-bar > .range-box > .number {
+    float: left;
+    height: 17px;
+    line-height: 17px;
+    width: 40px;
+    text-align: center;
+}
+
+.tool-bar > .range-box > .range {
+    float: left;
+    height: 17px;
+    line-height: 17px;
+    width: 120px;
+    margin: 0 5px;
+}
+
+.tool-bar > .range-box > .button {
+    float: left;
+    height: 17px;
+    line-height: 17px;
+    width: 45px;
+    text-align: center;
+    background: #408BFA;
+    color: #ffffff;
+}
+
+.tool-bar > .range-box > .button:before {
+    content: "手动";
+}
+
+.tool-bar > .range-box > .button.active:before {
+    content: "自适应";
+}
+
+.tool-bar > .axis-box {
+    width: 62px;
+    height: 17px;
+    line-height: 17px;
+}
+
+.tool-bar > .axis-box > .checkbox {
+    height: 12px;
+    width: 12px;
+}
+
+.tool-bar > .rift-box {
+    width: 140px;
+    height: 17px;
+    line-height: 17px;
+}
+
+.tool-bar > .rift-box > .checkbox {
+    height: 12px;
+    width: 12px;
+}
+
+.tool-bar > .rift-box > .number {
+    height: 17px;
+    line-height: 17px;
+    width: 30px;
+    text-align: center;
+}
+
+
+.tool-bar > .rift-box > .symbol {
+    line-height: 18px;
+    font-size: 11px;
+}
+
+
+.tool-bar > .grid-box {
+    width: 60px;
+    height: 17px;
+    line-height: 17px;
+}
+
+.tool-bar > .grid-box > .checkbox {
+    height: 12px;
+    width: 12px;
+}
+
+.tool-bar > .screen-box {
+    width: 115px;
+    height: 17px;
+    line-height: 17px;
+    margin-left: unset;
+}
+
+.tool-bar > .screen-box > .select {
+    height: 17px;
+    line-height: 15px;
+    width: 75px;
+    float: left;
+    font-size: 10px;
+}
+
+.scene {
+    background-image: url("img/bg.png");
+    background-repeat: repeat;
+    position: absolute;
+    border: var(--border);
+    z-index: 1;
+}
+
+.scene > .grid {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 998;
+    background-image: url("img/grid.png");
+    background-repeat: repeat;
+    pointer-events: none;
+}
+
+.scene > .row,
+.scene > .column {
+    position: absolute;
+}
+
+
+.scene > .row {
+    background: #000;
+    left: 0;
+    width: 100%;
+    z-index: 999;
+    pointer-events: none;
+}
+
+.scene > .column {
+    background: #000;
+    top: 0;
+    height: 100%;
+    z-index: 999;
+    pointer-events: none;
+}
+
+.box1 {
+    background: red;
+}
+
+.box2:hover,
+.box2:active {
+    border: 1px solid rgba(0, 0, 255, 0.25);
+    background: rgba(0, 0, 255, 0.1);
+}
+
+.box2 > .child {
+    width: 100%;
+    height: 100%;
+    background: yellow;
+    border-radius: 50%;
+}
+
+.box3 {
+    background: orange;
+}

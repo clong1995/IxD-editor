@@ -1,0 +1,21 @@
+#catalog {
+    width: 150px;
+    height: 100%;
+    background: #fafafa;
+    float: left;
+    border-right: var(--border);
+}
+
+#operation {
+    width: calc(100% - 150px);
+    height: 40px;
+    float: left;
+}
+
+#list {
+    width: calc(100% - 150px);
+    height: calc(100% - 45px);
+    float: left;
+    overflow-x: hidden;
+    overflow-y: auto;
+}

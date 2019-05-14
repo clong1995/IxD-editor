@@ -1,0 +1,52 @@
+.title {
+    width: 100%;
+    padding: 0 10px;
+    height: 25px;
+    line-height: 25px;
+    background: #ececec;
+    border-bottom: var(--border);
+}
+
+.title > .select {
+    float: right;
+}
+
+.content {
+    width: 100%;
+    height: calc(100% - 25px);
+    padding: 5px;
+}
+
+.content > .row {
+    padding-bottom: 4px;
+    overflow: hidden;
+}
+
+.content > .row > .name {
+    float: left;
+    width: 40px;
+    height: 22px;
+    line-height: 22px;
+    font-size: 11px;
+    margin-bottom: 3px;
+}
+
+.content > .row > .value {
+    float: left;
+    width: 54px;
+    height: 22px;
+    line-height: 22px;
+    padding: 0 5px;
+    margin-bottom: 3px;
+}
+
+.content > .row.x1 > .value {
+    width: calc(100% - 40px);
+}
+
+
+.content > .row.x4 > .name:nth-child(3),
+.content > .row.x4 > .name:nth-child(7) {
+    text-align: right;
+    padding-right: 5px;
+}
