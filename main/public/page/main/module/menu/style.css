@@ -37,9 +37,6 @@
     width: 365px;
     min-width: 365px;
     max-width: 650px;
-
-    height: 315px;
-    min-height: 106px;
     position: absolute;
     top: 30px;
     left: 0;
@@ -63,7 +60,6 @@
     float: left;
     background: var(--background);
     border-right: var(--border);
-    overflow-y: auto;
 }
 
 .chip > .item > .wrap > .classify > .sort {

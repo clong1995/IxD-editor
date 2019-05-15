@@ -4,19 +4,14 @@ class Module {
     }
 
     EVENT() {
-        // coo.on('.addBtn', this.domain, 'click', t => this.showStory());
+        cp.on('.sort', DOMAIN, 'click', t => this.selectedSort(t));
         // coo.on('.close', this.domain, 'click', t => this.hideStory());
     }
 
     INIT() {
-        this.initList();
     }
 
-    initList() {
-
-    }
-
-    showStory() {
-        cp.show(this.addContentDom);
+    selectedSort(target) {
+        cp.toggleActive(target)
     }
 }
